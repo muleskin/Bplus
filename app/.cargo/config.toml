@@ -1,0 +1,3 @@
+# Link the C runtime statically so bplus.exe runs on its own, without the VC++ redistributable.
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
